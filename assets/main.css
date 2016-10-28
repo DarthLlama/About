@@ -1,0 +1,79 @@
+/* Prevents shit from overflowing */
+img, embed, object, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prefered size for fingers */
+nav a, button {
+    min-height: 48px;
+    min-width: 48px;
+}
+
+image-header {
+    position: relative;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+#Header {
+    color: pink;
+    height: auto;
+}
+
+#About {
+    background-color: #2B3D4F;
+    height: 90%;
+    padding-bottom: 1%;
+}
+
+#Skills {
+    background-color: #2980BA;
+}
+
+#Work {
+    background-color: #26AD5E;
+    padding-bottom: 25px;
+}
+
+img {
+    padding: 10px;
+}
+
+#Footer {
+    background-color: #17A185;
+    padding-bottom: 1%;
+}
+
+#chart {
+    text-align: left;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.2);
+    border: 1px solid #aaa;
+    margin: 2% auto;
+    background: white;
+    width: auto;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.fa {
+    color: white;
+    padding: 5px;
+}
+
+.fa-linkedin:hover {
+    color: skyblue;
+}
+
+.fa-twitter:hover {
+    color: cyan;
+}
+
+.fa-quora:hover {
+    color: red;
+}
