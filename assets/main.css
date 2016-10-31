@@ -17,6 +17,11 @@ image-header {
 body {
     background-color: black;
     color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-size: 1.25em;
 }
 
 #Header {
@@ -54,7 +59,7 @@ img {
     border: 1px solid #aaa;
     margin: 2% auto;
     background: white;
-    width: auto;
+    width: 50px;
 }
 
 h4 {
