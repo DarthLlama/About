@@ -1,5 +1,5 @@
 /* Prevents shit from overflowing */
-img, embed, object, video {
+img, embed, object, video, canvas {
     max-width: 100%;
     height: auto;
 }
@@ -10,14 +10,16 @@ nav a, button {
     min-width: 48px;
 }
 
-image-header {
-    position: relative;
-}
-
 body {
     background-color: black;
     color: whitesmoke;
     font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 p {
@@ -37,6 +39,7 @@ p {
 
 #Skills {
     background-color: #2980BA;
+    padding-bottom: 1%;
 }
 
 #Work {
@@ -46,6 +49,11 @@ p {
 
 img {
     padding: 10px;
+}
+
+image-header {
+    position: relative;
+    height: 100%;
 }
 
 #Footer {
@@ -59,7 +67,7 @@ img {
     border: 1px solid #aaa;
     margin: 2% auto;
     background: white;
-    width: 50px;
+    background-size: fill;
 }
 
 h4 {

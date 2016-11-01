@@ -137,7 +137,7 @@ $(function(){
         that.newCanvas('label-'+i, i * 250);
         that.cxt.fillStyle = "rgba(0,0,0,.8)";
         that.cxt.strokeStyle = "rgba(0,0,0,.5)";
-        that.cxt.font = "bold 12px Verdana";
+        that.cxt.font = "bold 12px Ubuntu";
         var dist = Math.min(spacing * val, size * spacing);
         var x = that.width / 2 + Math.cos((Math.PI * 2) * (i / size)) * spacing * val;
         var y = that.height / 2 + Math.sin((Math.PI * 2) * (i / size)) * spacing * val;
