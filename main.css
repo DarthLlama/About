@@ -1,0 +1,97 @@
+/* Prevents shit from overflowing */
+img, embed, object, video, canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prefered size for fingers */
+nav a, button {
+    min-height: 48px;
+    min-width: 48px;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+}
+
+hr {
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+#Header {
+    color: pink;
+    height: auto;
+}
+
+#About {
+    background-color: #2B3D4F;
+    height: 90%;
+    padding-bottom: 1%;
+}
+
+#Skills {
+    background-color: #2980BA;
+    padding-bottom: 1%;
+}
+
+#Work {
+    background-color: #26AD5E;
+    padding-bottom: 25px;
+}
+
+img {
+    padding: 10px;
+}
+
+image-header {
+    position: relative;
+    height: 100%;
+}
+
+#Footer {
+    background-color: #17A185;
+    padding-bottom: 1%;
+}
+
+#chart {
+    text-align: left;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.2);
+    border: 1px solid #aaa;
+    margin: 2% auto;
+    background: white;
+    background-size: fill;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.fa {
+    color: white;
+    padding: 5px;
+}
+
+.fa-linkedin:hover {
+    color: skyblue;
+}
+
+.fa-twitter:hover {
+    color: cyan;
+}
+
+.fa-quora:hover {
+    color: red;
+}
