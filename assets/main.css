@@ -44,6 +44,10 @@ p {
     padding-bottom: 40px;
 }
 
+.skills-header {
+    margin-bottom: 40px;
+}
+
 .skills-logo {
     max-width: 400px;
     width: 100%;
