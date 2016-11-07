@@ -39,6 +39,11 @@ p {
     padding-bottom: 40px;
 }
 
+.about-img {
+    width: 50%;
+    max-width: 250px;
+}
+
 #Skills {
     background-color: #336E7B;
     padding-bottom: 40px;
@@ -50,7 +55,7 @@ p {
 
 .skills-logo {
     max-width: 400px;
-    width: 100%;
+    width: 206px;
 }
 
 #Work {
@@ -102,9 +107,41 @@ h4 {
     color: dodgerblue;
 }
 
+/**
+ * Flexbox
+ */
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.flexbox.pull-horz-center {
+  justify-content: center;
+  align-content: flex-start;
+}
+.flexbox.pull-vert-center {
+  justify-content: flex-start;
+  align-content: center;
+}
+.flexbox>* {
+  margin: 0 10px 10px 10px;
+}
+.flexbox.grid>* {
+  -webkit-flex: 1 0 0px;
+  flex: 1 0 0px;
+}
+
 @media only screen and (max-width: 720px) {
     .skills-logo {
         max-width: 200px;
         padding: 0 0 20px;
     }
+    .flexbox {
+        flex-direction: column;
+    }
 }
+
