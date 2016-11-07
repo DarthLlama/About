@@ -43,6 +43,10 @@ p {
     padding-bottom: 40px;
 }
 
+.skills-logo {
+    max-width: 400px;
+}
+
 #Work {
     background-color: #336E7B;
     padding-bottom: 40px;
@@ -60,15 +64,6 @@ image-header {
 #Footer {
     background-color: #2B3D4F;
     padding-bottom: 1%;
-}
-
-#chart {
-    text-align: left;
-    box-shadow: 0px 2px 8px rgba(0,0,0,.2);
-    border: 1px solid #aaa;
-    margin: 2% auto;
-    background: white;
-    background-size: fill;
 }
 
 h4 {
