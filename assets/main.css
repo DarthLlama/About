@@ -11,7 +11,7 @@ nav a, button {
 }
 
 body {
-    background-color: black;
+    background-color: #336E7B;
     color: whitesmoke;
     font-family: 'Ubuntu', sans-serif;
     padding: 0;
@@ -63,6 +63,10 @@ p {
     padding-bottom: 40px;
 }
 
+#Contact {
+    padding-bottom: 40px;
+}
+
 img {
     padding: 10px;
 }
@@ -75,6 +79,7 @@ image-header {
 #Footer {
     background-color: #2B3D4F;
     padding-bottom: 1%;
+    padding-top: 1%;
 }
 
 h4 {
