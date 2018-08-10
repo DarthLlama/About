@@ -5,26 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>A.McDonald</title>
+    <title>AlexMcDonald</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link rel=icon href="assets/img/favicon.png">
-    <link href="assets/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap is great. I love it. But fighting with the hover effects has hurt me physically. Bootstrap why are you like this -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-      <link href="assets/main.css" rel="stylesheet">
-
+    <link href="assets/css/main.css" rel="stylesheet">
   </head>
     
   <body>
-      <section id="About">
+      
+      <!-- The big header, my name and title. Hopefully comes off as professional whilst being to the point -->
+      <div class="jumbotron jumbotron-alex-mcdonald">
         <div class="row">
             <div class="container-fluid col-md-8 col-md-offset-2 text-center">
-                <h1>Hey there!<br/>I'm Alex</h1>
-                <h2>and I'm a Developer</h2>
-                <hr>
-                <img src="assets/img/alexface.jpg" class="img-responsive center-block about-img img-circle" alt="Alex's face">
+                <h2>Hey there, I'm <span class="colour-yellow-alex-mcdonald">Alex McDonald</span></h2>
+                <h2>and I'm a Full Stack Developer!</h2>
+            </div>
+        </div>
+          <div class="row">
+            <div class=" col-md-offset-4 col-sm-offset-4 col-md-4 col-sm-4 col-xs-offset-3 col-xs-6">
+                <a href="#About" class="btn btn-sm animated-button sandy-three">View my Work...</a>
+            </div>
+          </div>
+      </div>
+      
+      <!-- Navbar shenanigans -->
+      <nav class="navbar navbar-alex-mcdonald" id="navbar-alex-mcdonald">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+              <!-- TODO: Finish doing these links -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Qualifications</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      
+        <section id="About">
+          <div class="row">
+            <div class="container-fluid col-md-8 col-md-offset-2 text-center">
                 <h3>All About Me</h3>
-                <hr>
-                <p>A fun loving developer with a love of apps, websites and all-round design and development. I'm currently working on a Web-Development Top-up at Staffordshire University, with a focus on App development. I work well in teams, since I work well with both front end and back end development; I also enjoy managing teams, using a different range of skills.<br />Enjoys long walks on the beach and cats.</p>
+                        <hr>
+                <img src="assets/img/alexface.jpg" class="img-responsive center-block about-img img-circle" alt="Alex McDonald Profile Image">
+                <p>A fun loving developer with a love of programming, writing and board games. <br/>
+                    Currently working on my final year project; a front-end focussed Dungeons and Dragons character sheet.<br/>
+                    Teamplayer, Researcher, and hands on developer. <br/>
+                    Enjoys long walks on the beach and cats.</p>
             </div>
         </div>
       </section>
@@ -36,12 +79,15 @@
                 <hr>
               </div>
               
+              <!-- Sort out all these damn logos. Time to learn how to photoshop? -->
               <div class="flexbox pull-horz-center">
                   <div>
+                    <img src="assets/img/Java-logo.jpg" class="skills-logo" alt="Java Logo"> 
                     <img src="assets/img/Csh_Logo.png" class="skills-logo" alt="C# Logo">  
-                    <img src="assets/img/HTML5_Logo.png" class="skills-logo" alt="HTML5 Logo"> 
+                    
                   </div>
                   <div>
+                    <img src="assets/img/HTML5_Logo.png" class="skills-logo" alt="HTML5 Logo"> 
                     <img src="assets/img/CCS3_Logo.png" class="skills-logo" alt="CCS3 Logo">  
                     <img src="assets/img/JS5_Logo.png" class="skills-logo" alt="JS5 Logo">
                   </div>
@@ -187,6 +233,6 @@
             </div>
           </div>
       </section>
+    <script src="assets/js/main.js"></script>
   </body>
-    
 </html>

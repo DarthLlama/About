@@ -1,0 +1,332 @@
+/* Prevents shit from overflowing */
+img, embed, object, video, canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prefered size for fingers */
+nav a, button {
+    min-height: 48px;
+    min-width: 48px;
+}
+
+body {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+}
+
+hr {
+    margin-right: 25%;
+    margin-left: 25%;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+#About {
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.jumbotron-alex-mcdonald {
+    color: whitesmoke;
+    background-color: #353535;
+    height: 100vh;
+    vertical-align: middle;
+    text-align: center;
+    line-height: normal;
+    padding: 30vh 0 30vh 0;
+    margin-bottom: 0;
+}
+
+.colour-yellow-alex-mcdonald {
+    color: #F7CA18;
+}
+
+span.icon {
+	margin: 0 5px;
+	color: #D64541;
+}
+
+/*  Navbar */
+.navbar-alex-mcdonald {
+    background-color: #353535;
+    color: whitesmoke;
+    border-radius: 0;
+    overflow: hidden;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+.navbar-alex-mcdonald .nav a {
+    background-color: #353535;
+    color: whitesmoke;
+}
+
+.sticky {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Add some top padding to the page content to prevent 
+sudden quick movement (as the navigation bar gets a new 
+position at the top of the page (position:fixed and top:0) */
+.sticky + section {
+  padding-top: 60px;
+}
+
+/* Stolen from bootstrap.min*/
+.nav>li>a:hover{
+    text-decoration:none;
+    background-color:#353535;
+    color: #F7CA18;
+}
+
+.navbar-alex-mcdonald:hover {
+    background-color: #353535;
+    color: #F7CA18;
+}
+
+.navbar-alex-mcdonald .active {
+    background-color: #353535;
+    color: #F7CA18;
+}
+
+
+
+.about-img {
+    width: 50%;
+    max-width: 250px;
+}
+
+#Skills {
+    padding-bottom: 40px;
+}
+
+.skills-header {
+    margin-bottom: 40px;
+}
+
+.skills-logo {
+    max-width: 400px;
+    width: 206px;
+}
+
+#Work {
+    padding-bottom: 40px;
+}
+
+#Contact {
+    padding-bottom: 40px;
+}
+
+#Education {
+    padding-bottom: 40px;
+}
+
+#Volunteering {
+    padding-bottom: 40px;
+}
+
+img {
+    padding: 10px;
+}
+
+image-header {
+    position: relative;
+    height: 100%;
+}
+
+#Footer {
+    background-color: #353535;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+#Footer small {
+    color: whitesmoke;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.fa {
+    color: white;
+    padding: 5px;
+    font-size: 7mm;
+}
+
+.fa-linkedin:hover {
+    color: skyblue;
+}
+
+.fa-twitter:hover {
+    color: cyan;
+}
+
+.fa-quora:hover {
+    color: red;
+}
+
+.fa-github:hover {
+    color: black;
+}
+
+.fa-envelope:hover {
+    color: dodgerblue;
+}
+
+/**
+ * Flexbox
+ */
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.flexbox.pull-horz-center {
+  justify-content: center;
+  align-content: flex-start;
+}
+.flexbox.pull-vert-center {
+  justify-content: flex-start;
+  align-content: center;
+}
+.flexbox>* {
+  margin: 0 10px 10px 10px;
+}
+.flexbox.grid>* {
+  -webkit-flex: 1 0 0px;
+  flex: 1 0 0px;
+}
+
+@media only screen and (max-width: 720px) {
+    .skills-logo {
+        max-width: 125px;
+        padding: 0 0 20px;
+    }
+    .flexbox {
+        flex-direction: column;
+    }
+}
+
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+    /* This line doesn't do anything, but fixes some kind of hardware acceleration bug */
+    -webkit-transform: translateZ(0);
+	transition: all 1s ease;
+}
+
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+    -webkit-transform: translateZ(0);
+}
+
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+/*  The actual button stuff */
+a.animated-button.sandy-three {
+	border: 2px solid #F7CA18;
+	color: whitesmoke;
+    display: block;
+}
+
+a.animated-button.sandy-three:after {
+	border: 3px solid #F7CA18;
+	opacity: 0;
+    color: #F7CA18;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    
+}
+
+a.animated-button.sandy-three:hover:after {
+	height: 400% !important;
+	opacity: 1;
+	color: whitesmoke;
+}
+
+a.animated-button.thar-three {
+	color: #F7CA18;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+    /* Putting it here allows the href to work. Why? Magic probably. */
+    -webkit-transform: translateZ(0);
+}
