@@ -22,11 +22,18 @@ hr {
     margin-left: 25%;
     opacity: 0.5;
     margin-bottom: 20px;
+    border-top: 1px solid #353535;
+}
+
+h1 {
+    padding-top: 1.5em;
 }
 
 .row {
     margin-left: 0;
     margin-right: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 p {
@@ -58,6 +65,31 @@ span.icon {
 	color: #D64541;
 }
 
+/* About skills */
+.fas {
+    color: #353535;
+    padding: 5px;
+    font-size: 5em;
+}
+
+.fas.alex-mcdonald-skill{
+    color: #353535;
+    padding: 5px;
+    font-size: 5em;
+}
+
+.fab.alex-mcdonald-skill{
+    color: #353535;
+    padding: 5px;
+    font-size: 5em;
+}
+
+alex-mcdonald-skill {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
 /*  Navbar */
 .navbar-alex-mcdonald {
     background-color: #353535;
@@ -66,6 +98,7 @@ span.icon {
     overflow: hidden;
     margin-bottom: 0px;
     z-index: 1;
+    height: 100%;
 }
 
 .navbar-alex-mcdonald .nav a {
@@ -77,6 +110,7 @@ span.icon {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    height: auto;
 }
 
 /* Add some top padding to the page content to prevent 
@@ -103,7 +137,14 @@ position at the top of the page (position:fixed and top:0) */
     color: #F7CA18;
 }
 
+.navbar-toggle {
+    border-color: whitesmoke;
+}
 
+.navbar-toggle .icon-bar {
+    background-color: whitesmoke;
+    width: 100%;
+}
 
 .about-img {
     width: 50%;
@@ -162,25 +203,33 @@ h4 {
     margin-bottom: 5px;
 }
 
+
+/* Font Awesome had an update, so now theres both .fa & .fab */
 .fa {
     color: white;
     padding: 5px;
     font-size: 7mm;
 }
 
-.fa-linkedin:hover {
+.fab {
+    color: white;
+    padding: 5px;
+    font-size: 7mm;
+}
+
+.fab-linkedin:hover {
     color: skyblue;
 }
 
-.fa-twitter:hover {
+.fab-twitter:hover {
     color: cyan;
 }
 
-.fa-quora:hover {
+.fab-quora:hover {
     color: red;
 }
 
-.fa-github:hover {
+.fab-github:hover {
     color: black;
 }
 
