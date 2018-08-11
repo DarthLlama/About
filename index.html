@@ -5,165 +5,314 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>A.McDonald</title>
+    <title>Portfolio de la Alex McDonald</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link rel=icon href="assets/img/favicon.png">
-    <link href="assets/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap is great. I love it. But fighting with the hover effects has hurt me physically. Bootstrap why are you like this -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-      <link href="assets/main.css" rel="stylesheet">
-
+      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      
+    <link href="assets/css/main.css" rel="stylesheet">
   </head>
     
   <body>
-      <section id="About">
+      
+      <!-- The big header, my name and title. Hopefully comes off as professional whilst being to the point -->
+      <div class="jumbotron jumbotron-alex-mcdonald">
         <div class="row">
             <div class="container-fluid col-md-8 col-md-offset-2 text-center">
-                <h1>Hey there!<br/>I'm Alex</h1>
-                <h2>and I'm a Developer</h2>
-                <hr>
-                <img src="assets/img/alexface.jpg" class="img-responsive center-block about-img img-circle" alt="Alex's face">
-                <h3>All About Me</h3>
-                <hr>
-                <p>A fun loving developer with a love of apps, websites and all-round design and development. I'm currently working on a Web-Development Top-up at Staffordshire University, with a focus on App development. I work well in teams, since I work well with both front end and back end development; I also enjoy managing teams, using a different range of skills.<br />Enjoys long walks on the beach and cats.</p>
+                <h2>Hey there, I'm <span class="colour-yellow-alex-mcdonald">Alex McDonald</span></h2>
+                <h2>and I'm a Full Stack Developer!</h2>
             </div>
         </div>
-      </section>
-      
-      <section id="Skills">
           <div>
-            <div class="container-fluid text-center skills-header">
-                <h2>My Skills</h2>
-                <hr>
-              </div>
-              
-              <div class="flexbox pull-horz-center">
-                  <div>
-                    <img src="assets/img/Csh_Logo.png" class="skills-logo" alt="C# Logo">  
-                    <img src="assets/img/HTML5_Logo.png" class="skills-logo" alt="HTML5 Logo"> 
-                  </div>
-                  <div>
-                    <img src="assets/img/CCS3_Logo.png" class="skills-logo" alt="CCS3 Logo">  
-                    <img src="assets/img/JS5_Logo.png" class="skills-logo" alt="JS5 Logo">
-                  </div>
-                  
-                  
-                  
-              </div>
+            <div class=" col-md-offset-4 col-sm-offset-4 col-md-4 col-sm-4 col-xs-offset-3 col-xs-6">
+                <a data-scroll href="#About" class="btn btn-sm animated-button sandy-three" onclick="scrollTo(About)">View my Work</a>
+            </div>
           </div>
+      </div>
+      
+      <!-- Navbar shenanigans -->
+      <nav class="navbar navbar-alex-mcdonald" id="navbar-alex-mcdonald">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+              <!-- TODO: Finish doing these links -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a data-scroll href="#About" onclick="scrollTo(About)">About</a></li>
+                <li><a data-scroll href="#Work" onclick="scrollTo(Work)">Projects</a></li>
+                <!--<li><a data-scroll href="#Education" onclick="scrollTo(Education)">Experience</a></li>-->
+                <li><a data-scroll href="#Contact" onclick="scrollTo(Contact)">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      
+        <section id="About">
+            <div class="row">
+                <div class="container-fluid col-md-8 col-md-offset-2 text-center">
+                    <h1>About</h1>
+                    <hr>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row col-md-4 text-center">
+                    <div class="alex-mcdonald-about-icons">
+                        <div>
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div>
+                            <h3>Innovation</h3>
+                            <p>Pushing the boundaries of technologies is one of my greatest joys.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-md-4 text-center">
+                    <div class="alex-mcdonald-about-icons">
+                        <div>
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div>
+                            <h3>UX &amp; UI</h3>
+                            <p>Making you, the user, feel like a website is an adventure is whats important.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-md-4 text-center">
+                    <div class="alex-mcdonald-about-icons">
+                        <div>
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div>
+                            <h3>Teamwork</h3>
+                            <p>A job done together, is generally a job done faster, and with much more fun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row col-md-6 text-center">
+                    <div>
+                        <img src="assets/img/alex-mcdonald-profile-image.jpg" class="img-responsive center-block about-img img-circle" alt="Alex McDonald Profile Image">
+                        <strong><h3>Itsa me!</h3></strong>
+                        <hr>
+                        <p>A fun loving developer with a love of programming, writing and board games. Teamplayer, Researcher, and hands on developer. Enjoys time as a Dungeon Master, pampering cats and long walks on the beach.
+                    </div>
+                </div>
+                <div class="row col-md-6 text-center">
+                    <div>
+                        <h3>Skills</h3>
+                        <hr>
+                            <div class="col-md-4 col-sm-4 alex-mcdonald-skills-div">
+                                <i class="fab fa-java alex-mcdonald-skill"></i>
+                                <div>
+                                    <h4>Java</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 alex-mcdonald-skills-div">
+                                <i class="fab fa-html5 alex-mcdonald-skill"></i>
+                                <div>
+                                    <h4>HTML5</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 alex-mcdonald-skills-div">
+                                <i class="fab fa-css3-alt alex-mcdonald-skill"></i>
+                                <div>
+                                    <h4>CSS3</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 alex-mcdonald-skills-div">
+                                <i class="fab fa-js alex-mcdonald-skill"></i>
+                                <div>
+                                    <h4>JavaScript</h4>
+                                </div>
+                            </div>   
+                        
+                            <div class=" col-md-4 col-sm-4 alex-mcdonald-skills-div">
+                                <i class="fab fa-node alex-mcdonald-skill"></i>
+                                <div>
+                                    <h4>NodeJS</h4>
+                                </div>
+                            </div>
+                        
+                            <div class=" col-md-4 col-sm-4 alex-mcdonald-skills-div">
+                                <i class="fab fa-wordpress alex-mcdonald-skill"></i>
+                                <div>
+                                    <h4>Wordpress</h4>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-offset-2 col-sm-offset-2 col-md-4 col-sm-4 alex-mcdonald-skills-div">
+                                <i class="fas fa-robot alex-mcdonald-skill"></i>
+                                <div>
+                                    <h4>Machine Learning</h4>
+                                </div>
+                            </div>
+
+                            <div class=" col-md-4 col-sm-4 alex-mcdonald-skills-div">
+                                <i class="fab fa-git alex-mcdonald-skill"></i>
+                                <div>
+                                    <h4>Git</h4>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
       </section>
       
       <section id="Work">
-        <div>
-            <div class="container-fluid text-center">
-                <h2>My Previous Work</h2>
-                <h4>Click the images to see the work!</h4>
-                <hr>
-            </div>
-            <div class="row">
-                <div class="container col-md-4 col-md-offset-2">
-                    
-                    <a href="https://darthllama.github.io/mcttag/index.html"><img src="https://darthllama.github.io/mcttag/assets/img/carosel-2-purp.jpg" class="img-responsive center-block" alt="Image"></a>
-                </div>
-                <div class="container col-md-4">
-                    <h3>McDonald Tabletop & Gaming</h3>
-                    <p>A website that shows what a local gaming group offers. It was made for a module of the HND course, and created with the idea of small, local non-profit organisation in mind.</p>
-                        <p>Skills used include;</p>
-                    <ul>
-                        <li>Html</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="container-fluid"><hr></div>
-                <div class="container col-md-4 col-md-offset-2 text-center col-md-push-4">
-                    <a href="https://drive.google.com/open?id=0BwOWFbChupU8MHNBUHE0c3RZX1E"><img src="assets/img/dungerino.jpg" class="img-responsive center-block" alt="Image"></a>
-                </div>
-                <div class="container col-md-4 col-md-pull-4">
-                    <h3>Dungerino</h3>
-                    <p>A text based adventure game made with the Unity5 engine. It utilises C#, with a focus on loops and enumerators. This is the reason I like developing Apps.</p>
-                    <p>Skills used include;</p>
-                    <ul>
-                        <li>C#</li>
-                        <li>Unity</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="container-fluid"><hr></div>
-                <div class="container col-md-4 col-md-offset-2">
-                    <a href="http://webberbridge.esy.es/"><img src="assets/img/WebberbridgeLogo.jpg" class="img-responsive center-block" alt="Webberbridge Logo"></a>
-                </div>
-                <div class="container col-md-4">
-                    <h3>Webberbridge</h3>
-                    <p>A website made for a new local community centre. It's a standard design, with some exploration of features of HTML, CSS and of various frameworks.</p>
-                    <p>Skills used include;</p>
-                    <ul>
-                        <li>Html</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
-            </div>
-          </div>
-      </section>
-      
-      <section id="Education">
-        <div>
-            <div class="container-fluid text-center">
-                <h2>My Qualifications</h2>
-                <hr>
-            </div>
-          </div>
           
           <div class="row">
-            <div class="col-md-4 col-md-offset-4"><p>Distinction level Higher National Diploma at Staffordshire University</p>    
-                <p>4 A Levels including ICT</p>
-                <p>13 GCSEs from A* to C including Maths, English and ICT</p></div>
+                <div class="container-fluid col-md-8 col-md-offset-2 text-center">
+                    <h1>Projects</h1>
+                    <hr>
+                </div>
+            </div>
+          
+          <div class="container">
+              <div class="row col-md-12">
+                    <div class="col-md-4 col-md-offset-0 col-sm-offset-1 col-sm-10">
+                        <img src="assets/img/vf-os-screenshot.png"/>
+                        <h3>vf-OS</h3>
+                        <hr>
+                        <p>I worked on the Process Designer aspect- Working with Node, Camunda, Javascript, Docker &amp; Wordpress.</p>
+                    </div>
+                    <div class="col-md-4 col-md-offset-0 col-sm-offset-1 col-sm-10">
+                        <img src="assets/img/redalert-screenshot.png"/>
+                        <h3>RedAlert</h3>
+                        <hr>
+                        <p>For this, I worked on the CEP component- Working with Java, Springboot, Flink, Intellij, Eclipse, Linux systems &amp; server side data management.</p>
+                    </div>
+                    <div class="col-md-4 col-md-offset-0 col-sm-offset-1 col-sm-10">
+                        <img src="assets/img/mcttag-screenshot.png"/>
+                        <h3>McDonald Tabletop &amp; Gaming</h3>
+                        <hr>
+                        <p>My first year website- Working with HTML, CSS &amp; JavaScript. Here to show how quickly I have improved, and my ability to learn.</p>
+                    </div>
+              </div>
           </div>
       </section>
       
-      <section id="Volunteering">
+      <!-- So, about this. Its clunky, and whilst informative, its something that my CV covers. I am doubting this needs to be here, but maybe I'm wrong. -->
+      <!--
+      <section id="Education">
         <div class="container-fluid text-center">
-                <h2>My Volunteering</h2>
-                <hr>
-            </div>
-        <div class="row">
+            <h1>Experience</h1>
+            <hr>
+        </div>
+          
+        <div class="container">
             <div class="col-md-offset-2 col-md-4">
-                <p>South Staffs Work Clubs as an IT Coach</p>
-                <p>Skills:</p>
-                <ul>
-                    <ul>Helped teach people to use computers</ul>
-                    <ul>Got used to both an office and a walk in environment</ul>
-                    <ul>Worked with a team of full time volunteers</ul>
-                </ul>
-            </div>
+                <h3 class="text-center">Work History</h3>
+                <hr>
+                <p>Developer at <a class="colour-yellow-alex-mcdonald">Information Catalyst</a></p>
+                <p>IT Coach at <a class="colour-yellow-alex-mcdonald">South Staffs Work Clubs</a></p>
+                <p>IT Assistant at <a class="colour-yellow-alex-mcdonald">South Staffordshire Council</a></p>
             
+            </div>    
             <div class="col-md-4">
-                <p>South Staffordshire Council as an IT Assistant</p>
-                <p>Skills:</p>
-                <ul>
-                    <ul>Set up software on mobile and tablet devices</ul>
-                    <ul>Worked with hardware and troubleshooted in an office environment</ul>
-                    <ul>Worked with the IT staff</ul>
-                </ul>
+                <h3 class="text-center">Qualifications</h3>
+                <hr>
+                <div>
+                    <p>Distinction - Higher National Diploma at Staffordshire University</p>    
+                    <p>4 A Levels including ICT and English</p>
+                    <p>13 GCSEs from A* to C including Maths, English and ICT</p>
+                </div>
             
             </div>
-      </div>
-      
+        </div>
       </section>
+-->
       
       <section id="Contact">
           
         <div class="container-fluid text-center">
-                <h2>Get in Touch!</h2>
+                <h1>Contact</h1>
                 <hr>
-                <h4>Email: alex091094@hotmail.com</h4>
-                <h4>Mobile: 07947749850</h4>
+                <h3>Have a question, or want to work together?</h3>
+            
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2">
+                    <!-- Contact form -->
+                    <form id="contact-form" name="contact-form" class="form-alex-mcdonald" action="mail.php" method="POST">
+                        <div class="row form-row">
+                            <div class="col-md-6">
+                                <div class="mb-form">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                                <div class="text-center text-md-left col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 status-row">
+                                    <strong>
+                                    <div id="status-name"></div>
+                                    </strong>
+                                </div>   
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                                <div class="text-center text-md-left col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 status-row">
+                                    <strong>
+                                    <div id="status-email"></div>
+                                    </strong>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="row form-row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                                <div class="text-center text-md-left col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 status-row">
+                                    <strong>
+                                    <div id="status-subject"></div>
+                                    </strong>
+                                </div>   
+                            </div>
+                        </div>
+                        
+                        <div class="row form-row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea form-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+                                <div class="text-center text-md-left col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 status-row">
+                                    <strong>
+                                    <div id="status-message"></div>
+                                    </strong>
+                                </div>   
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Animated buttons are the bane of my existance. -->
+                    <div class="text-center text-md-left col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 status-row">
+                        <strong>
+                        <div id="status"></div>
+                        </strong>
+                    </div>    
+                    <div class="text-center text-md-left col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                        <a class="btn btn-sm animated-button sandy-three" onclick="validateForm();">Send</a>
+                    </div>    
+                </div>
+            </div>
           </div>
       </section>
       
@@ -173,20 +322,22 @@
                 <div class="container-fluid">
                     
                     <a href="mailto:alex091094@hotmail.com"><i class="fa fa-envelope"></i></a>
-                    
-                    <a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US"><i class="fa fa-linkedin"></i></a>
-                    
-                    <a href="https://twitter.com/AlexCMcDonald"><i class="fa fa-twitter"></i></a>
-                    
-                    <a href="https://www.quora.com/profile/Alex-McDonald-3"><i class="fa fa-quora"></i></a>
-                    
-                    <a href="https://github.com/DarthLlama"><i class="fa fa-github"></i></a>
-                
+                    <a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/AlexCMcDonald"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.quora.com/profile/Alex-McDonald-3"><i class="fab fa-quora"></i></a>
+                    <a href="https://github.com/DarthLlama"><i class="fab fa-github"></i></a>
                 </div>
                 <small>© 2016 - All rights reserved.</small>
             </div>
           </div>
       </section>
+      
+      <!-- Javescript hooray!-->
+        <script src="assets/js/main.js"></script>
+      <!-- Animted Scroll -->
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
   </body>
-    
 </html>
