@@ -214,19 +214,19 @@ h4 {
     font-size: 7mm;
 }
 
-.fab-linkedin:hover {
+.fab.fa-linkedin:hover {
     color: skyblue;
 }
 
-.fab-twitter:hover {
+.fab.fa-twitter:hover {
     color: cyan;
 }
 
-.fab-quora:hover {
+.fab.fa-quora:hover {
     color: red;
 }
 
-.fab-github:hover {
+.fab.fa-github:hover {
     color: black;
 }
 
@@ -385,17 +385,20 @@ a.animated-button.thar-three {
 #Contact {
     background-color: #353535;
     color: whitesmoke;
-    
 }
 
+.status-row {
+    padding-bottom: 1em;
+    color: #F7CA18;
+}
 
 .form-alex-mcdonald {
     padding-top: 1em;
 }
 
 .form-row {
-    padding-top: 1em;
-    padding-bottom: 0em;
+    padding-top: 0em;
+    padding-bottom: 1em;
 }
 
 textarea.form-control.form-textarea {
