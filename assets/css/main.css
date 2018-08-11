@@ -52,10 +52,14 @@ section {
     height: 100vh;
     vertical-align: middle;
     text-align: center;
-    line-height: normal;
-    padding: 30vh 0 30vh 0;
+    line-height: 100%;
     margin-bottom: 0;
+    padding: 25vh 0 25vh 0;
 }
+
+.jumbotron-content {
+}
+
 
 /* A copy of the yellow colour- just to have it written down */
 .colour-yellow-alex-mcdonald {
