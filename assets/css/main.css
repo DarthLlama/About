@@ -2,6 +2,7 @@
 img, embed, object, video, canvas {
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 
 /* Prefered size for fingers */
