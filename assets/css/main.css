@@ -54,7 +54,7 @@ section {
     text-align: center;
     line-height: 100%;
     margin-bottom: 0;
-    padding: 25vh 0 25vh 0;
+    padding: 20vh 0 25vh 0;
 }
 
 .jumbotron-content {
@@ -104,7 +104,6 @@ section {
 
 /* My beautiful face */
 .about-img {
-    width: 50%;
     max-width: 250px;
 }
 
