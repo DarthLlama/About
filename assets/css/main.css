@@ -58,6 +58,17 @@ section {
 }
 
 .jumbotron-content {
+    margin: auto;
+    width: 100%;
+    width: 100%;
+}
+
+.btn-row {
+    padding-top: 0;
+}
+
+.btn-jumbo {
+    margin-top: 0;
 }
 
 /* A copy of the yellow colour- just to have it written down */
@@ -76,6 +87,11 @@ section {
 
 .bg-colour-burgundy-alex-mcdonald {
     background-color: #702632;
+}
+
+/* About section*/
+.alex-mcdonald-about-icons {
+    padding-top: 1em;
 }
 
 /* About skills */
@@ -279,7 +295,7 @@ h4 {
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
-	margin: 30px auto 0;
+	margin: 0 auto 0;
 	padding: 14px 15px;
 	color: #fff;
 	font-size:14px;
@@ -327,7 +343,7 @@ a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
-	margin: 30px auto 0;
+	margin: 0 auto 0;
 	padding: 14px 15px;
 	color: #fff;
 	font-size:14px;
